@@ -1,15 +1,27 @@
---- #YAML:1.0
-name:                SVN-Pusher
-version:             0.04
-abstract:            Propagate changesets between two different svn repositories.
-license:             ~
-generated_by:        ExtUtils::MakeMaker version 6.36
-distribution_type:   module
-requires:     
-    SVN::Core:                     0.37.0
-    URI::Escape:                   0
-meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
-    version: 1.2
+---
+name: SVN-Pusher
+version: 0.05
 author:
-    - Shlomi Fish <shlomif@iglu.org.il>
+  - 'Shlomi Fish E<lt>shlomif@iglu.org.ilE<gt>'
+  - (based on SVN::Push by Gerald Richter E<lt>richter@dev.ecos.deE<gt>)
+abstract: Propagate changesets between two different svn repositories.
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  SVN::Core: 0
+  URI::Escape: 0
+provides:
+  SVN::Pusher:
+    file: lib/SVN/Pusher.pm
+    version: 0.05
+  SVN::Pusher::CmdLine:
+    file: lib/SVN/Pusher/CmdLine.pm
+  SVN::Pusher::MirrorEditor:
+    file: lib/SVN/Pusher.pm
+  SVN::Pusher::MyCallbacks:
+    file: lib/SVN/Pusher.pm
+generated_by: Module::Build version 0.2805
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
