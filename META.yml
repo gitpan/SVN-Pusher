@@ -1,6 +1,6 @@
 ---
 name: SVN-Pusher
-version: 0.05
+version: 0.06
 author:
   - 'Shlomi Fish E<lt>shlomif@iglu.org.ilE<gt>'
   - (based on SVN::Push by Gerald Richter E<lt>richter@dev.ecos.deE<gt>)
@@ -14,7 +14,7 @@ requires:
 provides:
   SVN::Pusher:
     file: lib/SVN/Pusher.pm
-    version: 0.05
+    version: 0.06
   SVN::Pusher::CmdLine:
     file: lib/SVN/Pusher/CmdLine.pm
   SVN::Pusher::MirrorEditor:
