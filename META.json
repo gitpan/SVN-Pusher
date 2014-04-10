@@ -5,7 +5,7 @@
       "(based on SVN::Push by Gerald Richter E<lt>richter@dev.ecos.deE<gt>)"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "Module::Build version 0.4205",
    "license" : [
       "perl_5"
    ],
@@ -23,14 +23,15 @@
       "runtime" : {
          "requires" : {
             "SVN::Core" : "0",
-            "URI::Escape" : "0"
+            "URI::Escape" : "0",
+            "perl" : "v5.8.8"
          }
       }
    },
    "provides" : {
       "SVN::Pusher" : {
          "file" : "lib/SVN/Pusher.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       },
       "SVN::Pusher::CmdLine" : {
          "file" : "lib/SVN/Pusher/CmdLine.pm"
@@ -51,5 +52,5 @@
          "url" : "https://bitbucket.org/shlomif/perl-svn-pusher"
       }
    },
-   "version" : "0.07"
+   "version" : "0.08"
 }
